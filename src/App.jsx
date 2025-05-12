@@ -1,6 +1,6 @@
-/* eslint-disable no-unused-vars */
+
 import React from "react";
-import { ToastContainer , toast } from "react-toastify";
+import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { BrowserRouter as Router } from "react-router-dom";
 import Navbar from "./components/Navbar";
@@ -12,11 +12,13 @@ import Contact from "./components/Contact";
 import BMICalculator from "./components/BMICalculator";
 import Footer from "./components/Footer";
 import "./App.css";
+import Markup from "../pages/Markup";  
 
 const App = () => {
   return (
     <Router>
       <Navbar />
+      <Markup /> 
       <Hero />
       <WorkoutSessions />
       <Gallery />

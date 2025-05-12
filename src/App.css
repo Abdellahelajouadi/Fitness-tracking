@@ -10,7 +10,7 @@
 
 /* Navbar css */
 
-header {
+ /* header {
   position: absolute;
   top: 0;
   left: 0;
@@ -20,6 +20,14 @@ header {
   padding: 8px 12px;
   margin-top: 45px;
   margin-left: 7rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 header p {
   font-family: "Exo 2", sans-serif;
@@ -31,6 +39,41 @@ header p {
 header p img {
   font-size: 10px;
   max-width: 30px;
+}  */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 30px;
+  background-color: #f5f5f5;
+}
+
+.logo-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+  font-size: 20px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.nav-links li a:hover {
+  color: #007bff;
 }
 
 /* Hero css */
@@ -39,7 +82,7 @@ header p img {
   min-height: 100vh;
   position: relative;
   background: url(/you2.jpg) rgba(0, 0, 0, 0.75);
-  background-blend-mode: darken;
+  background-blend-mode: hard-light;
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
